@@ -32,6 +32,9 @@
         
         block(addressStr,json,account.mnemonicPhrase,privateKeyStr);
     }];
+    
+    NSLog(@"增加了log");
+    
 }
 
 +(void)hs_inportMnemonics:(NSString *)mnemonics pwd:(NSString *)pwd block:(void(^)(NSString *address,NSString *keyStore,NSString *mnemonicPhrase,NSString *privateKey,BOOL suc,HSWalletError error,NSString *message))block{
